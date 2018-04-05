@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">RecipeApplication</string>
+
+    <string name="login_name">Name</string>
+    <string name="login_password">Password</string>
+    <string name="login_username_hint">Enter Your Email ID</string>
+    <string name="login_password_hint">Enter Your Password</string>
+    <string name="login">Login</string>
+    <string name="not_a_user">Not a User? <u>Sign Up Now!!!</u></string>
+
+
+    <string name="sign_up_mail">Mail ID</string>
+    <string name="sign_up_mail_hint">Enter Mail</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_name">Name</string>
+    <string name="sign_up_name_hint">Enter Your Name</string>
+    <string name="sign_up_password">Confirm password</string>
+    <string name="sign_up_region">Region</string>
+    <string name="sign_up_level">Cooking Level</string>
+
+    <string-array name="region_array">
+        <item>Select Region</item>
+        <item>Chinese</item>
+        <item>Italian</item>
+        <item>Mexican</item>
+        <item>North-Indian</item>
+        <item>South-Indian</item>
+    </string-array>
+
+    <string-array name="cooking_level_array">
+        <item>Select Cooking Level</item>
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Expert</item>
+    </string-array>
+
+    <string name="name_error">***Name cannot be empty</string>
+    <string name="mail_empty_error">***Email cannot be empty</string>
+    <string name="mail_error">***Mail Id does not exists</string>
+    <string name="password_error">***Password or Confirm password cannot be empty</string>
+    <string name="region_error">***Region cannot be empty</string>
+    <string name="cooling_level_error">***Cooking Level cannot be empty</string>
+    <string name="password_mismatch">**Password MisMatch!!!</string>
+
+    <string name="no_mail">*Mail Id is not registered!!!</string>
+    <string name="already_registered">*Mail Id already registered</string>
+    <string name="wrong_password">*Your Password is wrong!!!</string>
+
+    <string name="home_notification_title">Notifications</string>
+    <string name="search_title">Search</string>
+    <string name="account_edit_title">Edit</string>
+    <string name="account_logout">Logout</string>
+
+    <string name="following">%1$d \nFollowing</string>
+    <string name="followers">%1$d \nFollowers</string>
+
+    <string name="only_user">Sorry!!! You are the only user!!!</string>
+    <string name="follow_button_text">Follow</string>
+    <string name="un_follow_button_text">UnFollow</string>
+    <string name="people_credits_text">%1$d Credits</string>
+
+    <string name="tag_menu_text">Tag</string>
+    <string name="favorites_menu_text">Favorites</string>
+    <string name="report_menu_text">Report</string>
+    <string name="add_to_calendar_menu_text">Add to Calendar</string>
+    <string name="print_menu_text">Print</string>
+
+    <string name="shared_text">Shared %1$s</string>
+
+    <string name="diet_vegan">VEGAN</string>
+    <string name="diet_vegetarian">VEGETARIAN</string>
+    <string name="diet_non_vegetarian">NON-VEGETARIAN</string>
+
+    <string name="ingredients_heading">Ingredients</string>
+    <string name="methods_heading">How to do</string>
+    <string name="no_of_servings">%1$d Servings</string>
+
+    <string name="ingredient_text"><b> %1$s </b></string>
+
+    <string name="report_regarding">Reporting About</string>
+    <string name="report_problem">Type your problem here</string>
+    <string name="vulnerability_text">Level of vulnerability:</string>
+    <string name="report_button_text">Report</string>
+
+    <string name="not_a_like">Not a like</string>
+    <string name="like">Like</string>
+    <string name="report_problem_text">Problem in</string>
+    <string name="reports_heading">Reports received</string>
+
+    <string name="edit_button_text">Edit</string>
+    <string name="veg_button_text">Veg</string>
+    <string name="non_veg_button_text">Non-Veg</string>
+    <string name="vegan_button_text">Vegan</string>
+    <string name="add_image_button_text">Add Image</string>
+    <string name="recipe_title_hint">Enter your title here</string>
+    <string name="add_recipe_description">Enter the story behind your recipe</string>
+    <string name="servings_text">servings</string>
+
+    <string name="meal_time_breakfast">Breakfast</string>
+    <string name="meal_time_lunch">Lunch</string>
+    <string name="meal_time_brunch">Brunch</string>
+    <string name="meal_time_dinner">Dinner</string>
+    <string name="meal_time_heading">Meal-Time</string>
+
+    <string name="category_snacks">Snacks</string>
+    <string name="category_appetisers">Appetiser</string>
+    <string name="category_soups">Soups</string>
+    <string name="category_noodles">Noodles</string>
+    <string name="category_rice">Rice</string>
+    <string name="category_pasta">Pasta</string>
+    <string name="category_meat">Meat</string>
+    <string name="category_poultry">Poultry</string>
+    <string name="category_seafood">Seafood</string>
+    <string name="category_salads">Salads</string>
+    <string name="category_sides">Sides</string>
+    <string name="category_sauces">Sauces</string>
+    <string name="category_baking">Baking</string>
+    <string name="category_desserts">Desserts</string>
+    <string name="category_drinks">Drinks</string>
+    <string name="category_cakes">Cakes</string>
+    <string name="category_burger">Burger</string>
+    <string name="category_pizza">Pizza</string>
+    <string name="category_gravy">Gravy</string>
+    <string name="category_heading">Category</string>
+
+    <string name="add_video_button_text">Add Video</string>
+    <string name="shoot_video_button_text">Shoot Video</string>
+
+    <string name="reference_links_heading">Reference links</string>
+    <string name="diet_heading">Diet</string>
+    <string name="share_heading">Share to</string>
+    <string name="cooking_level_heading">Cooking level</string>
+    <string name="post_recipe">Post</string>
+    <string name="delete_recipe">Delete</string>
+
+    <string name="comments_heading">Comments</string>
+    <string name="comment_hint">Enter your comment here</string>
+    <string name="ref_link_hint">Enter your reference link</string>
+    <string name="add_method_hint">Enter methods description</string>
+    <string name="add_ingredients_hint">Enter ingredients</string>
+    <string name="no_video_warning">Sorry!!! No video provided by the chef</string>
+
+    <array name="share_security">
+        <item>Private</item>
+        <item>Public</item>
+        <item>Save to My Recipes</item>
+
+    </array>
+
+    <string name="level_beginner">Beginner</string>
+    <string name="level_intermediate">Intermediate</string>
+    <string name="level_expert">Expert</string>
+
+    <string name="filters_menu_text">Filter</string>
+    <string name="faq_add_question">Add your question here</string>
+    <string name="faq_add_question_button">Add question</string>
+    <string name="faq_answer_hint">Enter your answer here</string>
+</resources>

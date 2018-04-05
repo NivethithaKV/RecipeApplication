@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_main"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:gravity="center_vertical"
+            android:text="@string/diet_heading"
+            android:textColor="@color/colorRed"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/diet_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp">
+
+            <RadioButton
+                android:id="@+id/diet_vegan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/vegan_button_text" />
+
+            <RadioButton
+                android:id="@+id/diet_veg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/veg_button_text" />
+
+            <RadioButton
+                android:id="@+id/diet_non_veg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/non_veg_button_text" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:text="@string/cooking_level_heading"
+            android:textColor="@color/colorRed"
+            android:textSize="16sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"/>
+
+        <CheckBox
+            android:id="@+id/level_beginner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/level_beginner"
+            />
+
+        <CheckBox
+            android:id="@+id/level_intermediate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/level_intermediate" />
+
+        <CheckBox
+            android:id="@+id/level_expert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/level_expert" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/meal_time_heading"
+        android:textColor="@color/colorRed"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:weightSum="4">
+
+        <CheckBox
+            android:id="@+id/meal_time_breakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/meal_time_breakfast"
+            android:onClick="changeInMealTime"/>
+
+        <CheckBox
+            android:id="@+id/meal_time_brunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/meal_time_brunch"
+            android:onClick="changeInMealTime"/>
+
+        <CheckBox
+            android:id="@+id/meal_time_lunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/meal_time_lunch"
+            android:onClick="changeInMealTime"/>
+
+        <CheckBox
+            android:id="@+id/meal_time_dinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/meal_time_dinner"
+            android:onClick="changeInMealTime"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:text="@string/category_heading"
+        android:textColor="@color/colorRed"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:weightSum="4.0">
+
+        <CheckBox
+            android:id="@+id/cakes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_cakes"
+            android:onClick="changeInCategory"/>
+
+        <CheckBox
+            android:id="@+id/baking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_baking"
+            android:onClick="changeInCategory"/>
+
+        <CheckBox
+            android:id="@+id/burger"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_burger"
+            android:onClick="changeInCategory"/>
+
+        <CheckBox
+            android:id="@+id/appetiser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="@string/category_appetisers"
+            android:onClick="changeInCategory"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:weightSum="4">
+
+        <CheckBox
+            android:id="@+id/desserts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_desserts"
+            android:onClick="changeInCategory"/>
+
+        <CheckBox
+            android:id="@+id/drinks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_drinks"
+            android:onClick="changeInCategory"/>
+
+        <CheckBox
+            android:id="@+id/gravy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_gravy"
+            android:onClick="changeInCategory"/>
+
+        <CheckBox
+            android:id="@+id/meat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_meat"
+            android:onClick="changeInCategory"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:weightSum="4">
+
+        <CheckBox
+            android:id="@+id/noodles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_noodles"
+            android:onClick="changeInCategory"/>
+
+        <CheckBox
+            android:id="@+id/pasta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_pasta"
+            android:onClick="changeInCategory"/>
+
+        <CheckBox
+            android:id="@+id/pizza"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_pizza"
+            android:onClick="changeInCategory"/>
+
+        <CheckBox
+            android:id="@+id/poultry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_poultry"
+            android:onClick="changeInCategory"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:weightSum="4">
+
+        <CheckBox
+            android:id="@+id/rice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_rice"
+            android:onClick="changeInCategory"/>
+
+        <CheckBox
+            android:id="@+id/salads"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_salads"
+            android:onClick="changeInCategory"/>
+
+        <CheckBox
+            android:id="@+id/sauces"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_sauces"
+            android:onClick="changeInCategory"/>
+
+        <CheckBox
+            android:id="@+id/seafood"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_seafood"
+            android:onClick="changeInCategory"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:weightSum="4">
+
+        <CheckBox
+            android:id="@+id/sides"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_sides"
+            android:onClick="changeInCategory"/>
+
+        <CheckBox
+            android:id="@+id/snacks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_snacks"
+            android:onClick="changeInCategory"/>
+
+        <CheckBox
+            android:id="@+id/soups"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_soups"
+            android:onClick="changeInCategory"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

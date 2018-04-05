@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tabs>
+    <tab id="@+id/home"
+        icon="@drawable/ic_home_white_24dp"
+        title="Home"/>
+
+    <tab id="@+id/my_book"
+        icon="@drawable/ic_book_white_24dp"
+        title="My CookBook"/>
+
+    <tab id="@+id/faq"
+        icon="@drawable/ic_question_answer_white_24dp"
+        title="FAQ"/>
+
+    <tab id="@+id/people"
+        icon="@drawable/ic_people_white_24dp"
+        title="People"/>
+
+    <tab id="@+id/my_account"
+        icon="@drawable/ic_account_circle_white_24dp"
+        title="My Account"/>
+
+</tabs>

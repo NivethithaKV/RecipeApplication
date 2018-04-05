@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/user_info">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:cardElevation="12dp"
+            android:id="@+id/view2"
+            android:layout_gravity="center"
+            app:cardCornerRadius="40dp"
+            android:innerRadius="0dp"
+            android:shape="oval"
+            android:thicknessRatio="1.9">
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/user_image"
+                android:scaleType="fitXY"
+                android:focusable="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true">
+            </ImageView>
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:id="@+id/recipe_by_user_name"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:textStyle="bold|italic"
+            android:id="@+id/shared_message"
+            android:focusable="true"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/category_info"
+        android:layout_below="@id/user_info">
+
+        <ImageView
+            android:id="@+id/diet_indicator"
+            android:layout_margin="8dp"
+            android:layout_width="20dp"
+            android:focusable="true"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:id="@+id/diet"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:textSize="12sp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/btn_star_big_on"
+            android:layout_gravity="center"
+            android:focusable="true"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:textStyle="bold|italic"
+            android:id="@+id/earned_credits"
+            android:focusable="true"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/category_info">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:focusable="true"
+            android:id="@+id/recipe_description"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/tag"
+        app:showAsAction="never"
+        android:title="@string/tag_menu_text" />
+
+    <item android:id="@+id/favorites"
+        android:icon="@drawable/ic_bookmark_border_white_24dp"
+        app:showAsAction="ifRoom"
+        android:title="@string/favorites_menu_text"/>
+
+    <item android:id="@+id/report"
+        android:title="@string/report_menu_text"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/add_to_calendar"
+        app:showAsAction="never"
+        android:title="@string/add_to_calendar_menu_text"/>
+
+    <item android:title="@string/print_menu_text"
+        android:id="@+id/print"
+        app:showAsAction="never"/>
+
+
+</menu>
